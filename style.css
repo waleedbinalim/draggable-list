@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CUSTOM COLORS */
+body{
+    color: black;
+    background-color: black;
+    background: black;
+}
+
+nav, .nav-wrapper {
+    color: #343434ff;
+    background-color: #343434ff;
+    background: #343434ff;
+}
+
+.list-container{
+        color: #343434ff;
+        background-color: #343434ff;
+        background: #343434ff;
+}
+
+/* _______________ */
+
+nav {
+    padding: 5px;
+    min-height: auto;
+    justify-content: center;
+}
+
+.pop-up-content{
+    text-align: center;
+    padding: 35px;
+}
+
+.list-container{
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    max-width: 80%;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.button-for-update{
+    margin: auto;
+    text-align: center;
+    padding: 28px;
+}
+
+.the-button{
+    padding: 8px;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.list-details{
+    padding: 38px;
+}
+
+.music-category-details{
+    padding: 12px;
+}
+
+i{
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 510px) {
+    nav {
+        padding: 15px;
+        min-height: 150px;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    nav {
+        padding: 15px;
+        min-height: 190px;
+    }
+}
+

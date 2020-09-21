@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Lists Project</title>
+</head>
+
+<body class="">
+  <header>
+    <nav class="">
+      <div class="nav-wrapper ">
+        <a href="#" class="brand-logo center">WALEED BIN ALIM</a>
+      </div>
+    </nav>
+
+    <br><br>
+          
+
+    <!-- MODAL -->
+    <!-- MODAL -->
+    <!--ADD NEW MODAL -->
+
+<div class="modal pop-up-content" id="add-new">
+  <h1>Add New Album</h1>
+  <form id="add-new-form">
+    <div class="input-field">
+      <input type="text" id="artist-name" required />
+      <label for="artist-name">Artist: </label>
+    </div>
+    <div class="input-field">
+      <input type="text" id="album-name"  />
+      <label for="album-name">Album: </label>
+    </div>
+    <div class="input-field">
+      <input type="text" id="year-released"  />
+      <label for="year-released">Year: </label>
+    </div>
+    <div class="input-field">
+      <input type="text" id="genre"  />
+      <label for="genre">Genre: </label>
+    </div>
+    <button class="btn purple darken-2 z-depth-0 submit-new-entry">Submit</button>
+  </form>
+</div>
+    <!-- ADD NEW MODAL -->
+    <!-- MODAL -->
+    <!-- MODAL -->
+
+    <!-- Collapsible List -->
+    <div class="list-container">
+      <h1 class="white-text" style="text-align: center; padding-top: 25px; line-height: 3px;"><span class="flow-text">Your Ranked Lists</span> </h1>
+      <div class="list-category">
+        <h3 class="white-text" style="text-align: center; padding: 15px;"><span class="">Here's a small app created
+          to add, rank and update your favorite music albums
+        </span></h3>
+        <h6 class="white-text" style="text-align: center; padding: 30px;">You can add new albums using the <strong>[Add New]</strong>
+        button. Click and hold to drag the albums based on the order you'd like to rank them. Once done, click
+        the <strong>[Update]</strong> button below to save. To remove an album from the listing click the trash icon</h6>
+        <div class="list-contents">
+          <ul class="collapsible expandable">
+            <li class="active">
+              <div class="collapsible-header"><i class="large material-icons">album</i>
+                MUSIC ALBUMS
+              </div>
+                <div class="row center flow-text white music-category-details" style="width: 100%;">
+                <br>
+                <div class="col l1 m12 s12">#</div>
+                <div class="col l2 m12 s12">Artist</div>
+                <div class="col l2 m12 s12">Album</div>
+                <div class="col l1 m12 s12">Year</div>
+                <div class="col l3 m12 s12">Genre</div>
+                <div class="col l2 m12 s12 center"><a class="purple waves-effect waves-light btn modal-trigger" href="#add-new">Add New</a></div>
+              </div>
+                
+              
+              <div class="collapsible-body" >
+              <!-- NESTING -->
+              <ul class="collapsible expandable nested">
+                <li id="example1" class="list-group col active">
+
+                  
+                  <!-- <div class="white collapsible-body group-item">
+                    <span>                    
+                      <div class="row" style="width: 100%;">
+                      <br>
+                          <div class="col s1 rank-number"></div>
+                          <div class="col s2">Kamelot</div>
+                          <div class="col s2">Haven</div>
+                          <div class="col s1">2018</div>
+                          <div class="col s3">Symphonic Metal</div>
+                          <div class="col s1">
+                            <i class="material-icons delete-button">delete</i>
+                          </div>
+                      </div>
+                    </span>
+                 </div> -->
+
+                 
+
+                 <!-- CLONING -->
+                 <!-- CLONING -->
+                 <!-- <div class="white collapsible-body group-item">
+                  <span>                    
+                    <div class="row" style="width: 100%;">
+                    <br>
+                        <div class="col s1 rank-number"></div>
+                        <div class="col s2">Bad Omens</div>
+                        <div class="col s2">Finding God Before God Finds Me</div>
+                        <div class="col s1">2019</div>
+                        <div class="col s3">Metalcore</div>
+                        <div class="col s1">
+                          <i class="material-icons delete-button">delete</i>
+                        </div>
+                    </div>
+                  </span>
+               </div>
+
+               <div class="white collapsible-body group-item">
+                <span>                    
+                  <div class="row" style="width: 100%;">
+                  <br>
+                      <div class="col s1 rank-number"></div>
+                      <div class="col s2">Asking Alexandria</div>
+                      <div class="col s2">Asking Alexandria</div>
+                      <div class="col s1">2018</div>
+                      <div class="col s3">Post Hardcore</div>
+                      <div class="col s1">
+                        <i class="material-icons delete-button">delete</i>
+                      </div>
+                  </div>
+                </span>
+             </div>
+
+             <div class="white collapsible-body group-item">
+              <span>                    
+                <div class="row" style="width: 100%;">
+                <br>
+                    <div class="col s1 rank-number"></div>
+                    <div class="col s2">Conception</div>
+                    <div class="col s2">State of Deception</div>
+                    <div class="col s1">2020</div>
+                    <div class="col s3">Progressive Metal</div>
+                    <div class="col s1">
+                      <i class="material-icons delete-button">delete</i>
+                    </div>
+                </div>
+              </span>
+           </div> -->
+                 <!-- CLONING -->
+                 <!-- Cloning -->
+                </li>
+              <!-- NESTING -->
+              
+              <div class="white button-for-update">
+                <button class="the-button">Update List</button>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </header>
+
+  <!-- FIREBASE -->
+  <!-- FIREBASE -->
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDfY9_HhUAgrYkVC83fo5h5_-6v2Y80hIU",
+      authDomain: "album-list-ad791.firebaseapp.com",
+      databaseURL: "https://album-list-ad791.firebaseio.com",
+      projectId: "album-list-ad791",
+      storageBucket: "album-list-ad791.appspot.com",
+      messagingSenderId: "256194879177",
+      appId: "1:256194879177:web:49908c82b133d274623718",
+      measurementId: "G-94C4R42BXZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore();
+  </script>
+  <!-- FIREBASE -->
+  <!-- FIREBASE -->
+  <!-- FIREBASE -->
+  <!-- FIREBASE -->
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.modal').modal();
+    });
+
+    $(document).ready(function() {
+      $('.modal1').modal();
+    });
+
+    $(document).ready(function() {
+      $('.modal2').modal();
+    });
+
+    $(document).ready(function() {
+      $('.modal3').modal();
+    });
+    </script>
+    <script src="app.js"></script>
+    <script src="sorting.js"></script>
+    <script src="firebase.js"></script>
+
+</body>
+
+</html>
